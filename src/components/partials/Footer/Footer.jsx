@@ -1,6 +1,8 @@
+import styles from './Footer.module.scss'
+
 export const Footer = (props => {
     return(
-        <footer>
+        <footer className={styles.wrapper}>
                 <></>
         </footer>
     )
