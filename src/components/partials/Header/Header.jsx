@@ -4,7 +4,7 @@ import styles from './Header.module.scss'
 export const Header = (props => {
     return(
         <header className={styles.header}>
-                <h1>{(props.pagetitle) ? props.pagetitle : 'My React Project'}</h1>
+                {/* <h1>{(props.pagetitle) ? props.pagetitle : 'Bageriet'}</h1> */}
                 <Nav />
         </header>
     )

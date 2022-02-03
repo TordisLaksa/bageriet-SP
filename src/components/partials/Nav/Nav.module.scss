@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 //COLOR MODS
 $bg-red: #c66;
 $bg-green: #9c9;
@@ -22,15 +22,23 @@ $mobile: 580px;
 @media screen and (max-width: $mobile){
     body{
     background-color: $bg-green;
-    margin: auto;
+    // margin: auto;
     max-width: 75vw;  // gem den her!
-    height: 500px;
     color: white;
     border-radius: 10px;
 }
-.navbar{
+.nav{
     overflow: hidden;
     position: relative;
+
+    .icon{
+        color: white;
+        font-size: 4vw;
+        padding-left: .5vw;
+        &:hover{
+            color:#31536b;
+        }
+    }
     
     #myLinks{
         // display: none;
@@ -42,6 +50,15 @@ $mobile: 580px;
                 padding: 14px 16px;
                 font-size: 3.5vw;
                 display: block;
+                &:hover{
+                    color:#31536b;
+                }
+            }
+            &:nth-child(3){
+                a{
+                    font-family: 'Lobster', cursive;
+                    font-size: 3.7vw;
+                }
             }
         }
     }

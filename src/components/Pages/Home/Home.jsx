@@ -4,18 +4,20 @@ import Style from './Home.module.scss'
 
 function Item(props) {
     return(
-        <figure className={Style.slide} style={{height: 'auto'}}>
-        <h3>{props.item.title}</h3>
-        <img src={props.item.url} width='100%' alt={props.item.alt} />
+        <figure className={Style.slide}>
+            <figcaption>
+                <h3>{props.item.title}</h3>
+            </figcaption>
+            <img src={props.item.url} width='100%' alt={props.item.alt} />
         </figure>
     )
 }
 
 export const Home = () => {
     return(
-        <section>
-        <h1>Home</h1>
-        <Carousel animation="fade" interval="5000">
+        <>
+        <section id={Style.section1}>
+        <Carousel animation="fade" interval="3000">
             {
                 arrSliderImages.map((item, index) => {
                     return(
@@ -25,5 +27,9 @@ export const Home = () => {
             }
         </Carousel>
         </section>
+        <section id={Style.section2}>
+
+        </section>
+        </>
     )
 }

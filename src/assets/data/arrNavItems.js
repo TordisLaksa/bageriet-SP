@@ -1,5 +1,5 @@
 import { Home } from '../../components/Pages/Home/Home'
-import { Products } from '../../components/Pages/Products/Products'
+import { ProductList, Products } from '../../components/Pages/Products/Products'
 import { Contact } from '../../components/Pages/Contact/Contact'
 import { Login } from '../../components/Pages/Login/Login'
 
@@ -15,6 +15,18 @@ const arrNavItems = [
         path: '/products',
         element: <Products />,
         display: true
+    },
+    {
+        title: 'Produkt Liste',
+        path: '/products/:cat_id',
+        element: <Products />,
+        display: false
+    },
+    {
+        title: 'Produkt Detaljer',
+        path: '/products/:cat_id/:id',
+        element: <Products />,
+        display: false
     },
     {
         title: 'bageriet',

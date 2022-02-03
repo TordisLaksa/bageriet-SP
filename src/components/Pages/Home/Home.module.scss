@@ -1,0 +1,74 @@
+//COLOR MODS
+$bg-red: #c66;
+$bg-green: #9c9;
+$bg-blue: #699;
+
+
+//BREAKPOINTS
+$large: 1300px;
+$tablet: 980px;
+$mobile: 580px;
+
+
+@media screen and (max-width: $large) {
+    body{
+      background-color: $bg-red;
+    }
+  }
+@media screen and (max-width: $tablet) {
+  body{
+    background-color: $bg-blue;     
+  }
+}
+@media screen and (max-width: $mobile){
+    body{
+    background-color: $bg-green;
+  }
+  
+    #section1{
+      position: relative;
+      figure{
+        margin: 0;
+        // padding: 0;
+        figcaption{
+            h3{
+              font-size: 4vw;
+              position: absolute;
+              top: 16vw;
+              z-index: 2;
+              left: 30vw;
+              text-shadow: black 1px 1px 1px;
+            }
+          }
+          img{
+            width: 100%;
+          }
+        }
+        button{
+          position: relative;
+          bottom: 8.5vw;
+          z-index: 3;
+          svg{
+            width: 4vw;
+            height: 4vw;
+            padding: 0 .3vw;
+          }
+        }
+        div{
+          div{
+            &:nth-child(2), &:nth-child(3){
+              height: fit-content;
+              button{
+                position: relative;
+                bottom: -19vw;
+                // color: blue;
+                margin-inline: 1vw;
+                }
+              
+              }
+          }
+
+        }
+  }
+  
+}
